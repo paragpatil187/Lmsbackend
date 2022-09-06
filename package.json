@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"nodemon src/server"
+    "server": "nodemon src/server"
   },
   "keywords": [],
   "author": "",
@@ -16,4 +16,3 @@
     "nodemon": "^2.0.19"
   }
 }
-
