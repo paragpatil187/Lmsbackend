@@ -8,6 +8,7 @@ const router = express.Router();
 
 router.post ("", crudController.post(Assignment))  
 router.get("", crudController.get(Assignment))
+
  
 
 module.exports = router;

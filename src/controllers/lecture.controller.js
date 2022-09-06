@@ -1,13 +1,13 @@
 const express = require("express");
 
-const Assignment = require("../model/assignment.model")
+const Lecture = require("../model/lecture.model")
 
 const crudController = require("./crud.controller")
 
 const router = express.Router();
 
-router.post ("", crudController.post(Assignment))  
-router.get("", crudController.get(Assignment))
+router.post ("", crudController.post(Lecture))  
+router.get("", crudController.get(Lecture))
  
 
 module.exports = router;
