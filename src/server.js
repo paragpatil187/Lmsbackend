@@ -13,8 +13,8 @@ app.use(express.json());
 app.use("/lecture", lectureController);
 app.use("/assignment", assignmentController);
 
-const port  = process.env.port || 3001;
+const PORT  = process.env.port;
 app.listen(port, async function(){
     await connect();
-    console.log(`listening on port ${port}`)
+    console.log(`listening on port ${PORT}`)
 });
