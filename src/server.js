@@ -1,5 +1,5 @@
 const dotenv = require("dotenv");
-
+const cors=require("cors")
 
 
 const express = require("express");
@@ -13,6 +13,7 @@ const assignmentController = require("./controllers/assignment.controller");
 const app = express();
 dotenv.config();
 
+app.use(cors())
 app.use(express.json());  
 
 app.use("/lecture", lectureController);
