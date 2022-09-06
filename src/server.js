@@ -14,7 +14,7 @@ app.use("/lecture", lectureController);
 app.use("/assignment", assignmentController);
 
 const PORT  = process.env.port;
-app.listen(port, async function(){
+app.listen(PORT, async function(){
     await connect();
     console.log(`listening on port ${PORT}`)
 });
